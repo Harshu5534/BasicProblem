@@ -7,7 +7,7 @@ namespace BasicProblem
         {
             Console.WriteLine("Welcome To Basic Program");
             bool end = true;
-            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n7.QuotientRemainder\n8.End the Program");
+            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n7.QuotientRemainder\n8.NumberSwap\n9.End the Program");
             while (end == true)
             {
                 Console.WriteLine("Take an option to execute");
@@ -45,8 +45,11 @@ namespace BasicProblem
                         QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
                         quotientAndRemainder.QuotientRemainder();
                         break;
-
                     case 8:
+                        TwoNumberSwap Swap = new TwoNumberSwap();
+                        Swap.NumberSwap();
+                        break;
+                    case 9:
                         end = false;
                         break;
 
