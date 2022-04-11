@@ -7,7 +7,7 @@ namespace BasicProblem
         {
             Console.WriteLine("Welcome To Basic Program");
             bool end = true;
-            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n6.End the Program");
+            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n7.QuotientRemainder\n8.End the Program");
             while (end == true)
             {
                 Console.WriteLine("Take an option to execute");
@@ -41,8 +41,12 @@ namespace BasicProblem
                         FindLargestNumber largetNumber = new FindLargestNumber();
                         largetNumber.LargestNumber();
                         break;
-
                     case 7:
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.QuotientRemainder();
+                        break;
+
+                    case 8:
                         end = false;
                         break;
 
