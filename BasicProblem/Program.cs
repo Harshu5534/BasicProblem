@@ -7,7 +7,7 @@ namespace BasicProblem
         {
             Console.WriteLine("Welcome To Basic Program");
             bool end = true;
-            Console.WriteLine("1.Leap Year\n 2.End the Program");
+            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.End the Program");
             while (end == true)
             {
                 Console.WriteLine("Take an option to execute");
@@ -19,6 +19,10 @@ namespace BasicProblem
                         leapYear.CheckLeapYear();
                         break;
                     case 2:
+                        PowerOfTwo powerOfTwo = new PowerOfTwo();
+                        powerOfTwo.PowerTable();
+                        break;
+                    case 3:
                         end = false;
                         break;
                     default:
