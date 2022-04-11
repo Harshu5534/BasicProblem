@@ -7,7 +7,7 @@ namespace BasicProblem
         {
             Console.WriteLine("Welcome To Basic Program");
             bool end = true;
-            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.End the Program");
+            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.End the Program");
             while (end == true)
             {
                 Console.WriteLine("Take an option to execute");
@@ -33,8 +33,12 @@ namespace BasicProblem
                         EvenOddNumber evenOddNumber = new EvenOddNumber();
                         evenOddNumber.CheckEvenOdd();
                         break;
-                        
                     case 5:
+                        VowelConsonant vowelConsonant = new VowelConsonant();
+                        vowelConsonant.CheckVowelOrConsonant();
+                        break;
+
+                    case 6:
                         end = false;
                         break;
 
