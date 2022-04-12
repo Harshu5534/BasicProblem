@@ -7,7 +7,7 @@ namespace BasicProblem
         {
             Console.WriteLine("Welcome To Basic Program");
             bool end = true;
-            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n7.QuotientRemainder\n8.NumberSwap\n9.FlipCoin\n10.PrimeFactorNumber\n11.End the Program");
+            Console.WriteLine("1.LeapYear\n2.PowerOfTwo\n3.HarmonicNumber\n4.EvenOddNumber\n5.VowelsConsonent\n6.LargestNumber\n7.QuotientRemainder\n8.NumberSwap\n9.FlipCoin\n10.End the Program");
             while (end == true)
             {
                 Console.WriteLine("Take an option to execute");
@@ -54,13 +54,8 @@ namespace BasicProblem
                         coin.CoinFlip();
                         break;
                     case 10:
-                        PrimeFactorsNumber number = new PrimeFactorsNumber();
-                        number.PrimeFactors();
-                        break;
-                    case 11:
                         end = false;
                         break;
-
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
                         break;
