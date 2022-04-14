@@ -13,13 +13,14 @@ namespace BasicProblem
         {
             Console.WriteLine("Enter Any Alphabet: ");
             char ch = Convert.ToChar(Console.ReadLine());
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            char ch1 =char.ToLower(ch);
+            if (ch1 == 'a' || ch1 == 'e' || ch1 == 'i' || ch1 == 'o' || ch1 == 'u')
             {
-                Console.WriteLine(" Alphabets Are Vowels.");
+                Console.WriteLine(ch+ " "+" Alphabets Is Vowels.");
             }
-            else if ((ch >= 'a'&& ch <='z') || (ch >= 'A'&& ch <='Z'))
+            else 
             {
-                Console.WriteLine(" Alphabet Are Consonent.");            
+                Console.WriteLine(ch+" "+" Alphabet IS Consonent.");            
             }
 
             
